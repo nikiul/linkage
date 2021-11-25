@@ -1,0 +1,158 @@
+.possibilities {
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+.possibilities__title {
+    text-align: left;
+    margin-bottom: 24px;
+
+    @media (max-width: 1190px) {
+        text-align: center;
+    }
+}
+
+.possibilities__subtitle {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 20px;
+
+    @media (max-width: 1190px) {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+
+.possibilities__content {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1190px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.tab__wrap {
+    @media (max-width: 1190px) {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+}
+
+.tab {
+    width: 500px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 1190px) {
+        margin-right: 15px;
+        position: relative;
+        left: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        white-space: nowrap;
+        width: 100%;
+    }
+}
+
+.tablinks {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    padding-left: 20px;
+    cursor: pointer;
+
+    @media (max-width: 1190px) {
+        padding-top: 12px;
+        margin-right: 10px;
+    }
+}
+
+.tablinks_active {
+    padding: 12px 20px;
+    background-color: #f5f6f0;
+    border-radius: 8px;
+
+    .tablinks__info_active {
+        display: block;
+    }
+}
+
+.tablinks__title {
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+
+    p {
+        @extend %font-style;
+
+        @media (max-width: 550px) {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+}
+
+.tablinks__info {
+    display: none;
+    margin-left: 35px;
+    margin-top: 10px;
+
+    p {
+
+        br {
+            display: none;
+
+            @media (max-width: 1190px) {
+                display: block;
+            }
+        }
+    }
+}
+
+.possibilities__img {
+    width: 840px;
+    height: 500px;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    @media (max-width: 1440px) {
+        width: 700px;
+        height: auto;
+    }
+
+    @media (max-width: 1280px) {
+        width: 600px;
+    }
+
+    @media (max-width: 1190px) {
+        width: 100%;
+    }
+}
+
+.tabcontent {
+    display: none;
+
+    width: 100%;
+    height: auto;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

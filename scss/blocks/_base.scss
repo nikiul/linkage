@@ -1,0 +1,212 @@
+%font-style {
+    font-size: 24px;
+    line-height: 28px;
+    color: #4C4C4C;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.none {
+    display: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.body__lock {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1620px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 1670px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    padding: 0;
+    margin: 0;
+}
+
+ul,li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 34px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #405CEE;
+    border: 1px solid transparent;
+    box-shadow: 0px 4px 4px rgba(158, 151, 142, 0.04), 0px 5px 10px rgba(89, 84, 74, 0.35);
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+
+    &:hover {
+        background: #2344EF;
+        border: 1px solid #E1E5EA;
+        box-shadow: 0px 10px 15px 15px rgba(64, 92, 238, 0.2), 0px 8px 10px 5px rgba(64, 92, 238, 0.2);
+    }
+
+    &:active {
+        background: #1238FF;
+        box-shadow: inset 2px 4px 5px rgba(78, 87, 131, 0.4), inset 2px 4px 4px rgba(39, 40, 46, 0.1), inset 2px 4px 15px rgba(68, 76, 120, 0.5);
+    }
+
+    &:disabled {
+        color: #FFFFFF;
+        background: #A7BBC7;
+        box-shadow: 0px 4px 4px rgba(158, 151, 142, 0.04), 0px 5px 10px rgba(89, 84, 74, 0.35);
+    }
+}
+
+.btn-red {
+    padding: 20px 60px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FF5C65;
+    border: 1px solid transparent;
+    box-shadow: 0px 10px 15px 15px rgba(64, 92, 238, 0.07), 0px 2px 7px 5px rgba(64, 92, 238, 0.2);
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+        background: #F84B54;
+        border: 1px solid #FAF3F3;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(248, 75, 84, 0.2), 0px 10px 10px rgba(135, 101, 103, 0.2);
+    }
+
+    &:active {
+        background: #FF232F;
+        box-shadow: inset 2px 4px 5px rgba(129, 71, 75, 0.4), inset 2px 4px 4px rgba(46, 40, 39, 0.1), inset 2px 4px 15px rgba(120, 68, 68, 0.5);
+    }
+}
+
+.title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    color: #4C4C4C;
+
+    @media (max-width: 768px) {
+        font-size: 28px;
+        line-height: 33px;
+    }
+
+    @media (max-width: 550px) {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+input {
+    padding: 14px 26px;
+    font-size: 24px;
+    line-height: 28px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #4C4C4C;
+    border: none;
+    outline: none;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* WebKit, Edge */
+    ::-webkit-input-placeholder {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #869198;
+    }
+
+   /* Firefox 4-18 */
+    :-moz-placeholder {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #869198;
+    }
+
+   /* Firefox 19+ */
+    ::-moz-placeholder {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #869198;
+    }
+
+   /* IE 10-11 */
+    :-ms-input-placeholder {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #869198;
+    }
+
+   /* Edge */
+    ::-ms-input-placeholder {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #869198;
+    }
+
+   /* MODERN BROWSER */
+    ::placeholder {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #869198;
+    }
+}
